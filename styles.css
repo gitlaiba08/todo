@@ -1,0 +1,160 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('td2.jpg') no-repeat center center fixed; /* Dark pink background image */
+    background-size: cover; /* Ensure the image covers the whole screen */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    color: #ffffff; /* White text for readability */
+}
+
+.todo-app {
+    width: 600px;
+    max-height: 90vh;
+    background: #ffe6e6; /* Pastel pink background for the app box */
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
+    border: 1px solid #ffcccc; /* Light pink border for a subtle frame */
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff007f; /* Vibrant pink for headings */
+    font-weight: 600;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#taskInput, #priorityInput {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ffcccc; /* Light pink border */
+    border-radius: 10px;
+    background-color: #ffffff; /* White input fields */
+    color: #ff007f; /* Vibrant pink text */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#taskInput:focus, #priorityInput:focus {
+    border-color: #ff007f; /* Highlighted border on focus */
+    outline: none;
+}
+
+#addTaskButton {
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #ff007f; /* Vibrant pink button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#addTaskButton:hover {
+    background-color: #ff3399; /* Slightly lighter pink on hover */
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+.search-section {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ffcccc; /* Light pink border */
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #ff007f; /* Vibrant pink text */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput:focus {
+    border-color: #ff007f;
+    outline: none;
+}
+
+.tasks-section {
+    margin-top: 10px;
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 5px;
+}
+
+.tasks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tasks-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: #ffffff; /* White task background */
+    border: 1px solid #ffcccc; /* Light pink border */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #ff007f; /* Vibrant pink text */
+    transition: background-color 0.3s ease;
+}
+
+.tasks-list li:hover {
+    background-color: #ffe6e6; /* Pastel pink on hover */
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #ffffff; /* White text for buttons */
+    background-color: #ff007f; /* Vibrant pink background */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3399; /* Slightly lighter pink */
+}
+
+.priority {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.priority.high {
+    background-color: #d9534f; /* Bootstrap red */
+    color: white;
+}
+
+.priority.medium {
+    background-color: #f0ad4e; /* Bootstrap orange */
+    color: white;
+}
+
+.priority.low {
+    background-color: #5cb85c; /* Bootstrap green */
+    color: white;
+}
